@@ -35,7 +35,7 @@ public class GitHubController {
             throw new ResponseStatusException(NOT_FOUND, "Repository not found: " + name);
         }
         RepositoryCommits dto = new RepositoryCommits();
-        dto.setRepository_Id(repo.getId());
+        dto.setRepositoryId(repo.getId());
         dto.setCommits(commitRepository.findAllByRepositoryId(repo.getId()));
         return dto;
     }
