@@ -12,6 +12,7 @@ public class Commit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String sha;
     private String message;
     private String author;
     private LocalDateTime date;

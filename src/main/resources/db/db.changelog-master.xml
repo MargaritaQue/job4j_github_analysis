@@ -6,4 +6,5 @@
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
     <include file="classpath:db/scripts/001_ddl_create_table_repositories.xml"/>
     <include file="classpath:db/scripts/002_ddl_alter_table_commits.xml"/>
+    <include file="classpath:db/scripts/003_ddl_add_sha_and_unique_commits.xml"/>
 </databaseChangeLog>
